@@ -1,0 +1,25 @@
+
+### get all notes
+GET http://localhost:8080/api/notes
+
+
+### get specific notes
+GET http://localhost:8080/api/notes/1
+
+
+### create a new note
+POST http://localhost:8080/api/notes
+content-type: application/json
+
+{
+    "content": "vs code rest client is great",
+    "important": true
+}
+
+### create a new note without content
+POST http://localhost:8080/api/notes
+content-type: application/json
+
+{
+    "important": true
+}

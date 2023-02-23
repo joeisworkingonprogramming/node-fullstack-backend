@@ -1,0 +1,21 @@
+
+### get all persons
+GET http://localhost:8080/api/persons
+
+### get specific persons
+GET http://localhost:8080/api/persons/1
+
+### create a new person
+POST http://localhost:8080/api/persons
+content-type: application/json
+
+{
+    "name": "sample",
+    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+}
+
+### delete specific persons
+DELETE http://localhost:8080/api/persons/1
+
+### get info
+GET http://localhost:8080/info
