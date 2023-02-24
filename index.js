@@ -84,6 +84,6 @@ app.get("/info", (req, res) => {
     `<div> <p>Phonebook has info for ${size} people</p><p>${now}</p> </div>`
   );
 });
-
+const PORT = process.env.PORT || 8089;
 app.listen(8089);
 console.log("Server listening on port 8089");
