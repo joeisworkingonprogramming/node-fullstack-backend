@@ -10,8 +10,8 @@ POST http://localhost:8080/api/persons
 content-type: application/json
 
 {
-    "name": "sample",
-    "time": "Wed, 21 Oct 2015 18:27:50 GMT"
+    "name": "John",
+    "number": "123-232-43"
 }
 
 ### delete specific persons

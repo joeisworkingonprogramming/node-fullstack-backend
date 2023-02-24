@@ -1,8 +1,10 @@
 const express = require("express");
 const morgan = require("morgan");
 const app = express();
+const cors = require("cors");
 
 app.use(express.json());
+app.use(cors());
 morgan.token("body", function (req, res) {
   const body = req.body;
   return Object.keys(body).length !== 0 ? JSON.stringify(req.body) : " ";
@@ -83,5 +85,5 @@ app.get("/info", (req, res) => {
   );
 });
 
-app.listen(8080);
-console.log("Server listening on port 8080");
+app.listen(8089);
+console.log("Server listening on port 8089");
